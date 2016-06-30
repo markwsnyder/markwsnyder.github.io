@@ -12,13 +12,12 @@ form {
     background-image: url("GridTest.png");
     border-radius:5px;
 }
-
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 5%;
     font-weight: bold;
     color: rgba(0,0,0,0.6);
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.2);
 }
 h2 {
     margin-left: 0%;
@@ -29,7 +28,8 @@ h2 {
 footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-small;
-    margin-left: 3%;
+    color: rgb(120,120,120);
+    margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -37,8 +37,8 @@ p {
     margin-left: 5px;
 }
 div {
-    margin-left: 5%;
-    margin-right: 2.5%;
+    margin-left: 30px;
+    margin-right: 20px;
     border-radius: 5px;
     text-indent: 15px;
     background: rgb(74,74,74);
