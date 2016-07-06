@@ -3,6 +3,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     color: gainsboro;
+    /*background: linear-gradient(#444, rgb(74,74,74));*/
 }
 form {
     text-align: left;
@@ -11,6 +12,7 @@ form {
     background-image: url("../assets/GridTest.png");
     border-radius:8px;
     padding: 0px 0px 0px 0px;
+    border: 1px solid rgb(74,74,74);
 }
 .container { position:relative; padding: 10px 10px 10px 150px;
 }
@@ -26,13 +28,13 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: larger;
-	border-bottom: thin solid rgb(0,140,0);
+	border-bottom: thin solid rgb(0,100,0);
 }
 footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-small;
     color: rgb(120,120,120);
-    margin-left: 15px;
+    margin-left: 5%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -61,7 +63,7 @@ img {
     font-size: small;
 }
 #header { border:0px solid #000; width:75%; 
-    margin:0px 0 5px 0;
+    margin: 0 0 5px 1em;
     text-align: left;
     text-indent: 1em;
 }
@@ -77,9 +79,10 @@ header:visited {
     padding: 5px 5px 5px 5px;
 }
 #footer { border:0px solid #444; width:100%;
-    margin:5px 0 0 0;
+    margin:5px 0 0 -6px;
     text-indent: 0;
     padding-left: 6px;
+    text-align: right;
 }
 #avatar {
     margin-left: -16px;
@@ -112,10 +115,11 @@ nav ul:after {
 }
 nav ul li {
 	float: left;
+	z-index: 99;
 }
 nav ul li:hover {
 	background: rgb(74,74,74);
-	border-bottom: thin solid rgb(0,140,0);
+	border-bottom: thin solid rgb(0,100,0);
 }
 nav ul li:hover a {
 	color: gainsboro;
@@ -147,10 +151,18 @@ nav ul ul ul {
 }
 .active {
     background-color: #4CAF50;
-	border-bottom: solid rgb(0,140,0);
+	border-bottom: solid rgb(0,100,0);
 }
 .topcorner{
    position:absolute;
    top:-17px;
    right:5%;
+}
+.icon {
+    width: 35px;
+    border-radius: 6px;
+    padding: 0 0 0 0;
+}
+.icon:hover {
+    box-shadow: 0px 0px 5px rgba(0,100,0, 1); 
 }
