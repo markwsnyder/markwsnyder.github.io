@@ -8,7 +8,7 @@ form {
     text-align: left;
     text-indent: 1em;
     background-color: dimgrey;
-    background-image: url("GridTest.png");
+    background-image: url("../assets/GridTest.png");
     border-radius:8px;
     padding: 0px 0px 0px 0px;
 }
