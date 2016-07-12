@@ -1,0 +1,57 @@
+body {
+    background-color: dimgrey;
+    margin-left: 10%;
+    color: gainsboro;
+    font-weight: bold;
+    background-image: url("download.pn");
+}
+form {
+    text-align: left;
+}
+label {
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+h3 {
+    margin-left: 5%;
+}
+
+input[type=text] {
+    width: 65%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+input[type=checkbox] {
+    width: 13px;
+    display: inline-block;
+}
+input[type=submit] {
+    width: 120px;
+    font-size: 13px;
+}
+input[type=button] {
+    width: 100px;
+}
+.checked-off {
+    text-decoration: line-through;
+    color: darkgrey;
+    font-weight: lighter;
+}
+div[id="list"] {
+    background-color: grey;
+    text-align: left;
+    width: 65%;
+}
+div[id="stats"] {
+    margin-left: 4px;
+}
+div[id="nav"] {
+    display: block;
+}
+div[id="bottom"] {
+    display: inline-block;
+}
+img {
+    width: 65%;
+}

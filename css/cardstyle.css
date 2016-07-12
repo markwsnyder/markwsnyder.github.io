@@ -1,0 +1,109 @@
+
+/* defines general aspects, including background page color and font color
+you may use an image as the background if you like, but it's not recommended */
+
+/* contains entire content, modifying not recommended */
+#cardcontainer {
+    width: 470px;
+    margin: auto;
+    overflow: auto;
+    margin-bottom: 0px;
+}
+
+/* Character card in its entirety - background color affects whole card */
+.card {
+    background-color: rgb(74,74,74);
+    float: left;
+    width: 460px;
+    margin: 5px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 2px;
+    border: 1px solid #444;
+}
+
+/* text portion of the card */
+.cardcontent {
+    float: left;
+    width: 318px;
+    height: 188px;
+    margin: 5px;
+    margin-left: 110px;
+    padding: 5px;
+    border: 1px solid #444;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(74,74,74);
+    overflow-y:auto;
+}
+
+.cardcontent h2 {
+    display: inline-block;
+    width: 60%;
+}
+
+/* ensures category responses are displayed inline, don't change */
+.cardcontent h3 {
+    display: inline;
+}
+
+/* image size - not recommended for modification */
+.cardimage {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    margin-left: -10px;
+    position: absolute;
+}
+.cardimage2 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    margin-left: -10px;
+    margin-top: 110px;
+    position: absolute;
+}
+.cardbutton {
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-left: 8px;
+    border-radius: 2px;
+    background-color: rgb(74,74,74);
+    border: solid thin #444;
+    color: gainsboro;
+    padding: 5px 5px;
+}
+.cardbutton:hover {
+    background-color: #666;
+    border: 1px solid rgb(0,140,0) !important;
+}
+/* main text */
+p {
+    text-align: left;
+    margin: 2px;
+    padding-top: 5px;
+}
+button {
+    border: none;
+    outline: none;
+}
+/* border above and below page title */
+hr {
+    border-width: 1px 0px;
+    border-color: #efefef transparent #fefefe transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (min-width: 1072px) {
+    #cardcontainer {
+        width: 950px;
+    }
+}
+
+@media (min-width: 1608px) {
+    #cardcontainer {
+        width: 1430px;
+    }
+}

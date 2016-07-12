@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+
+<link href="http://fonts.googleapis.com/css?family=Syncopate|Open+Sans:400,800|Six+Caps" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+
+/* defines general aspects, including background page color and font color
+you may use an image as the background if you like, but it's not recommended */
+
+/* contains entire content, modifying not recommended */
+#cardcontainer {
+    width: 490px;
+    margin: auto;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+/* Character card in its entirety - background color affects whole card */
+.card {
+    background-color: #ececec;
+    float: left;
+    width: 460px;
+    margin: 10px;
+    padding: 10px 0px 10px 10px;
+}
+
+/* text portion of the card */
+.cardcontent {
+    float: left;
+    width: 218px;
+    height: 188px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted #aaa;
+    border-left: none;
+    border-right: none;
+    background-color: #ececec;
+    overflow-y:auto;
+}
+
+/* ensures category responses are displayed inline, don't change */
+.cardcontent h3 {
+    display: inline;
+}
+
+/* image size - not recommended for modification */
+.cardimage {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+/* main text */
+p {
+    text-align: left;
+    margin: 2px;
+    padding-top: 5px;
+}
+
+/* page title */
+h1 { 
+    font-family: "Syncopate";
+    text-align: center;
+    color: #444;
+    margin: 25px 0;
+}
+
+/* card titles */
+h2 { 
+    font-size: 14px;
+    text-align: center;
+    color: #413847;
+    margin: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* categories */
+h3 { 
+    font-size: 13px;
+    color: #8f6c78;
+    margin: 2px;
+}
+
+/* border above and below page title */
+hr {
+    border-width: 1px 0px;
+    border-color: #efefef transparent #fefefe transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (min-width: 1000px) {
+    #cardcontainer {
+        width: 980px;
+    }
+}
+
+@media (min-width: 1500px) {
+    #cardcontainer {
+        width: 1470px;
+    }
+}
+
+</style>
+</head>
+
+<!-- Page Content -->
+
+<body>
+<!-- Main Card Content, recommended in pairs of twos for aesthetic purposes
+Scrollbars will be automatically added to long descriptions
+Will need to host images yourself
+Image sizes must be 200px by 300px (w x h)
+The <br /> is necessary after each <span> to ensure linebreak between categories
+Can add/delete/change categories as fit your characters 
+Remember to change urls to the proper ones 
+Copy and paste to add more rows of cards -->
+<div id="cardcontainer">  
+  <div class="card">
+    <img class="cardimage" src="#" />
+    <div class="cardcontent">
+      <h2>TITLE</h2>
+      <h3>CATEGORY: </h3><span>WHOA</span><br />
+      <h3>CATEGORY: </h3><span>RESPONSE</span><br />
+      <h3>CATEGORY: </h3><span>RESPONSE</span><br />
+      <h3>CATEGORY: </h3><span>RESPONSE</span>
+      <p>THIS IS HOW LONG THIS WILL GO FOR TO TEST THINGS YESTLong character description to demonstrate that you can write pretty much as much as you want here and it'll scroll automatically without destroying the layout of the card. Because who wants text overflowing the boundaries, eh? That's just not pretty. We want our things to be pretty. Otherwise, what's the point in the character page? All our characters are BEAUTIFUL and deserve BEAUTIFUL, CLEAN CARDS. Fin.</p>
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
