@@ -4,10 +4,15 @@ you may use an image as the background if you like, but it's not recommended */
 
 /* contains entire content, modifying not recommended */
 #cardcontainer {
-    width: 470px;
+    width: 471px;
     margin: auto;
     overflow: auto;
-    margin-bottom: 0px;
+    background: #444;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border:1px solid rgb(74,74,74);
 }
 
 /* Character card in its entirety - background color affects whole card */
@@ -17,7 +22,7 @@ you may use an image as the background if you like, but it's not recommended */
     width: 460px;
     margin: 5px;
     padding: 10px 0px 10px 0px;
-    border-radius: 2px;
+    border-radius: 3px;
     border: 1px solid #444;
 }
 
@@ -68,11 +73,6 @@ you may use an image as the background if you like, but it's not recommended */
     display: inline-block;
     margin-bottom: 3px;
     margin-left: 8px;
-    border-radius: 2px;
-    background-color: rgb(74,74,74);
-    border: solid thin #444;
-    color: gainsboro;
-    padding: 5px 5px;
 }
 .cardbutton:hover {
     background-color: #666;
@@ -84,10 +84,7 @@ p {
     margin: 2px;
     padding-top: 5px;
 }
-button {
-    border: none;
-    outline: none;
-}
+
 /* border above and below page title */
 hr {
     border-width: 1px 0px;
@@ -96,14 +93,90 @@ hr {
     margin: 0px;
 }
 
-@media (min-width: 1072px) {
+@media (min-width: 1092px) {
     #cardcontainer {
-        width: 950px;
+        width: 945px;
     }
 }
 
-@media (min-width: 1608px) {
+@media (min-width: 1628px) {
     #cardcontainer {
-        width: 1430px;
+        width: 1420px;
+    }
+}
+
+
+
+
+
+#verticlecardcontainer {
+    width: 471px;
+    margin: auto;
+    overflow: auto;
+    margin-bottom: 0px;
+    background: #444;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border:1px solid rgb(74,74,74);
+}
+
+/* Character card in its entirety - background color affects whole card */
+.verticlecard {
+    background-color: rgb(74,74,74);
+    float: left;
+    width: 460px;
+    margin: 5px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 3px;
+    border: 1px solid #444;
+}
+
+/* text portion of the card */
+.verticlecardcontent {
+    float: left;
+    width: 408px;
+    height: 188px;
+    margin: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid #444;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(74,74,74);
+    overflow-y:auto;
+}
+
+.verticlecard h2 {
+    display: inline-block;
+    width: 66.5%;
+    border-bottom: non;
+}
+
+/* ensures category responses are displayed inline, don't change */
+.verticlecard h3 {
+    display: inline;
+}
+
+/* image size - not recommended for modification */
+.verticlecardimage {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+@media (min-width: 1092px) {
+    #verticlecardcontainer {
+        width: 945px;
+    }
+}
+
+@media (min-width: 1628px) {
+    #verticlecardcontainer {
+        width: 1420px;
     }
 }

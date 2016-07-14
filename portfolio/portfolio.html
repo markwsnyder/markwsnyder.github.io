@@ -12,12 +12,11 @@
         		<li><a href="../index.html">Home</a></li>
         		<li><a href="portfolio.html" class="active">Portfolio</a>
         			<ul>
-        				<li><a href="#">Unity 3D</a></li>
-        				<li><a href="#">Custom Apps</a></li>
-        				<li><a href="#">Web Projects</a>
+        				<li><a href="#unity">Unity 3D</a></li>
+        				<li><a href="#custom">Custom Apps</a></li>
+        				<li><a href="#web">Web Projects</a>
         					<ul>
         						<li><a href="web-projects/todo/to-do.html">To Do List</a></li>
-        						<li><a href="#">Template</a></li>
         					</ul>
         				</li>
         			</ul>
@@ -31,11 +30,12 @@
                 <div id="header"><h2>Portfolio</h2></div>
                 <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 <div id="cardcontainer">  
+                
                   <div class="card">
                     <img class="cardimage" src="../assets/img/icons/unity3dlogo.png" />
                     <div class="cardcontent">
                       <h2>Unity</h2>
-                      <button class="cardbutton" type="button">View Projects</button>
+                      <button class="cardbutton" type="button" onclick="onUnityClick()">View Projects</button>
                       <div></div>
                       <h3>Used Since: </h3><span>Jan 2016</span><br />
                       <h3>Experience: </h3><span>Grandmaster</span><br />
@@ -44,12 +44,13 @@
                       <p>Long words in this section suck because text wrap.<p>
                     </div>
                   </div>
+                  
                   <div class="card">
                     <img class="cardimage" src="../assets/img/icons/cplusplus.png" />
                     <img class="cardimage2" src="../assets/img/icons/csharp.png" />
                     <div class="cardcontent">
                       <h2>Custom Apps</h2>
-                      <button class="cardbutton" type="button">View Projects</button>
+                      <button class="cardbutton" type="button" onclick="onCustomClick()">View Projects</button>
                       <div></div>
                       <h3>CATEGORY: </h3><span>WHOA</span><br />
                       <h3>CATEGORY: </h3><span>RESPONSE</span><br />
@@ -58,12 +59,13 @@
                       <p>Words<p>
                     </div>
                   </div>
+                  
                   <div class="card">
                     <img class="cardimage" src="../assets/img/icons/html5-css3.png" />
                     <img class="cardimage2" src="../assets/img/icons/javascript.png" />
                     <div class="cardcontent">
                       <h2>Web Projects</h2>
-                      <button class="cardbutton" type="button">View Projects</button>
+                      <button class="cardbutton" type="button" onclick="onWebClick()">View Projects</button>
                       <div></div>
                       <h3>CATEGORY: </h3><span>WHOA</span><br />
                       <h3>CATEGORY: </h3><span>RESPONSE</span><br />
@@ -73,7 +75,37 @@
                     </div>
                   </div>
                 </div>
+                
+                <div id="verticlecardcontainer" hidden>
+                  
+                <div id="unityVerticleContainer" hidden>
+                  <a name="unity"></a>
+                  <div class="verticlecard">
+                    <h2>Unity</h2>
+                    <button class="cardbutton" type="button">Project Page</button>
+                    <img class="verticlecardimage" src="../assets/img/icons/unity3dlogo.png"/>
+                    <div class="verticlecardcontent">
+                      <div></div>
+                      <h3>Used Since: </h3><span>Jan 2016</span><br />
+                      <h3>Experience: </h3><span>Grandmaster</span><br />
+                      <h3>Something Else: </h3><span>Tactician</span><br />
+                      <h3>Piano Skillz: </h3><span>Asian</span>
+                      <p>Long words in this section suck because text wrap.<p>
+                    </div>
+                  </div>
+                </div>
+                  
+                <div id="customVerticleContainer" hidden>
+                </div>
+                
+                <div id="webVerticleContainer" hidden>
+                </div>
+                
+                </div>
+                
             </form>
         <footer>© 2016 Mark Snyder. All Rights Reserved.</footer>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/portfolio.js"></script>
 </html>
