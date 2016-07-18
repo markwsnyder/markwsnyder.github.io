@@ -55,6 +55,12 @@ h3 {
     font-weight: normal;
     font-size: large;
 }
+h4 {
+    color: var(--mygreen);
+    font-weight: normal;
+    font-size: medium;
+    display: inline;
+}
 footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-small;
@@ -86,6 +92,10 @@ button {
     color: gainsboro;
     padding: 5px 5px;
 }
+button:hover {
+    background-color: #666;
+    border: 1px solid rgb(0,140,0) !important;
+}
 #sidebar {
     border:1px solid var(--mydarkgrey);
     position: absolute;
@@ -96,16 +106,16 @@ button {
     padding: 5px 5px 5px 5px;
     font-size: small;
 }
-#header { border:0px solid #000; width:75%; 
+.header { border:0px solid #000; width:75%; 
     margin: 0 0 0px 2em;
     text-align: left;
     text-indent: 1em;
 }
-header:visited {
+.header:visited {
     color: inherit;
     text-decoration: inherit;
 }
-#content { border:1px solid var(--mydarkgrey);
+.content { border:1px solid var(--mydarkgrey);
     margin:5px 5px 5px 5px;
     border-radius: var(--radius);
     background: var(--mylightgrey);
@@ -151,7 +161,6 @@ nav ul li {
 	z-index: 99;
 	margin-left: 0px;
 	border-bottom: thin solid var(--mylightgrey);
-
 }
 nav ul li:hover {
 	background: var(--mylightgrey);
@@ -195,10 +204,11 @@ nav ul ul ul {
 	background: var(--mylightgrey);
 	color: gainsboro;
 }
-.topcorner{
-   position:absolute;
+.nav{
+   position:fixed;
    top:-17px;
    right:5%;
+   z-index: 99;
 }
 .icon {
     width: 30px;

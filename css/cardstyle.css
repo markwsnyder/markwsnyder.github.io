@@ -8,7 +8,7 @@ you may use an image as the background if you like, but it's not recommended */
     margin: auto;
     overflow: auto;
     background: #444;
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 5px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -22,8 +22,9 @@ you may use an image as the background if you like, but it's not recommended */
     width: 460px;
     margin: 5px;
     padding: 10px 0px 10px 0px;
-    border-radius: 3px;
+    border-radius: 2px;
     border: 1px solid #444;
+    position: relative;
 }
 
 /* text portion of the card */
@@ -43,40 +44,36 @@ you may use an image as the background if you like, but it's not recommended */
 
 .cardcontent h2 {
     display: inline-block;
-    width: 60%;
+    width: 55%;
 }
 
 /* ensures category responses are displayed inline, don't change */
-.cardcontent h3 {
-    display: inline;
-}
 
 /* image size - not recommended for modification */
 .cardimage {
-    float: left;
+    float: none;
     width: 100px;
     height: 100px;
-    margin: 5px;
-    margin-left: -10px;
     position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    margin-left: 5px;
 }
 .cardimage2 {
-    float: left;
+    float: none;
     width: 100px;
     height: 100px;
-    margin: 5px;
-    margin-left: -10px;
-    margin-top: 110px;
     position: absolute;
+    top: 110px;
+    left: 0;
+    margin: 10px;
+    margin-left: 5px;
 }
 .cardbutton {
     display: inline-block;
-    margin-bottom: 3px;
-    margin-left: 8px;
-}
-.cardbutton:hover {
-    background-color: #666;
-    border: 1px solid rgb(0,140,0) !important;
+    position: relative;
+    margin-left: 3px;
 }
 /* main text */
 p {
@@ -115,7 +112,7 @@ hr {
     overflow: auto;
     margin-bottom: 0px;
     background: #444;
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -129,7 +126,7 @@ hr {
     width: 460px;
     margin: 5px;
     padding: 10px 0px 10px 0px;
-    border-radius: 3px;
+    border-radius: 2px;
     border: 1px solid #444;
 }
 

@@ -77,6 +77,8 @@ function displayWeb() {
 function hideAll() {
     $("#verticlecardcontainer").hide();
     $("#unityVerticleContainer").hide();
+    $("#customVerticleContainer").hide();
+    $("#webVerticleContainer").hide();
 }
 
 // ON CLICK FUNCTIONS
