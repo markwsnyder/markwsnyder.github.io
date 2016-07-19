@@ -3,7 +3,7 @@
     --mydarkgrey: #444;
     --mylightgrey: rgb(74,74,74);
     --mylightestgrey: #666;
-    --mygreen: rgb(0,140,0);
+    --mygreen: rgb(40,180,0);
 }
 body {
     background: var(--mydarkgrey);
@@ -64,7 +64,7 @@ h4 {
 footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-small;
-    color: rgb(120,120,120);
+    color: var(--mylightestgrey);
     margin-left: 5%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -87,14 +87,14 @@ button {
     border: none;
     outline: none;
     border-radius: 2px;
-    background-color: rgb(74,74,74);
-    border: solid thin #444;
+    background-color: rgb(40,180,0);
+    border: solid thin rgb(74,74,74);
     color: gainsboro;
     padding: 5px 5px;
 }
 button:hover {
     background-color: #666;
-    border: 1px solid rgb(0,140,0) !important;
+    border: 1px solid rgb(40,180,0) !important;
 }
 #sidebar {
     border:1px solid var(--mydarkgrey);
@@ -215,5 +215,5 @@ nav ul ul ul {
     border-radius: 5px;
 }
 .icon:hover {
-    box-shadow: 0px 0px 5px rgba(0,100,0, 1); 
+    box-shadow: 0px 0px 5px rgba(40,180,0,1); 
 }

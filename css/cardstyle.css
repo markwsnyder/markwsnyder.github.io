@@ -17,7 +17,7 @@ you may use an image as the background if you like, but it's not recommended */
 
 /* Character card in its entirety - background color affects whole card */
 .card {
-    background-color: rgb(74,74,74);
+    background-color: rgba(74,74,74,1);
     float: left;
     width: 460px;
     margin: 5px;
@@ -44,7 +44,7 @@ you may use an image as the background if you like, but it's not recommended */
 
 .cardcontent h2 {
     display: inline-block;
-    width: 55%;
+    width: 60%;
 }
 
 /* ensures category responses are displayed inline, don't change */
@@ -147,7 +147,7 @@ hr {
 
 .verticlecard h2 {
     display: inline-block;
-    width: 66.5%;
+    width: 65%;
     border-bottom: non;
 }
 

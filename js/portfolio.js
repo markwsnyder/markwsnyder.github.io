@@ -54,24 +54,27 @@ function displayDefault() {
 }
 
 function displayUnity() {
-    hideAll();
+    $("#customVerticleContainer").hide();
+    $("#webVerticleContainer").hide();
     
     $("#verticlecardcontainer").show();
-    $("#unityVerticleContainer").show(500);
+    $("#unityVerticleContainer").fadeIn(500);
 }
 
 function displayCustom() {
-    hideAll();
+    $("#unityVerticleContainer").hide();
+    $("#webVerticleContainer").hide();
     
     $("#verticlecardcontainer").show();
-    $("#customVerticleContainer").show(500);
+    $("#customVerticleContainer").fadeIn(500);
 }
 
 function displayWeb() {
-    hideAll();
-    
+    $("#unityVerticleContainer").hide();
+    $("#customVerticleContainer").hide();
+
     $("#verticlecardcontainer").show();
-    $("#webVerticleContainer").show(500);
+    $("#webVerticleContainer").fadeIn(500);
 }
 
 function hideAll() {

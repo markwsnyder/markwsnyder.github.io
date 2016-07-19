@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel = "stylesheet" href = "/css/style.css" />
-    <link rel="stylesheet" href="/css/cardstyle.css" />
+    <link rel = "stylesheet" href = "../css/style.css" />
+    <link rel="stylesheet" href="../css/cardstyle.css" />
 </head>
     <body>
         <nav id="mainNav" class="nav">
@@ -36,12 +36,12 @@
                     <img class="cardimage" src="/assets/img/icons/unity3dlogo.png" />
                     <div class="cardcontent">
                       <h2>Unity</h2>
-                      <button class="cardbutton" type="button" onclick="onUnityClick()">View Projects</button>
+                      <span><button class="cardbutton" type="button" onclick="onUnityClick()">View Projects</button></span>
                       <div></div>
                       <h4>Used Since: </h4><span>Jan 2016</span><br />
                       <h4>Proficiency: </h4><span>Intermediate</span><br />
                       <h4>Programming Language: </h4><span>C#</span><br />
-                      <p>My childhood dream of making video games has become possible through Unity. Whether they all end up as one large hobby or a career, making games in Unity has been an amazing learning experience for me.<p>
+                      <p>My dream of making video games has become possible through Unity. These are my Unity projects that had functionality beyond learning.<p>
                     </div>
                   </div>
                   
@@ -50,12 +50,12 @@
                     <img class="cardimage2" src="/assets/img/icons/csharp.png" />
                     <div class="cardcontent">
                       <h2>Custom Apps</h2>
-                      <button class="cardbutton" type="button" onclick="onCustomClick()">View Projects</button>
+                      <span><button class="cardbutton" type="button" onclick="onCustomClick()">View Projects</button></span>
                       <div></div>
                       <h4>Programming Since: </h4><span>2012</span><br />
                       <h4>Proficiency: </h4><span>Intermediate</span><br />
                       <h4>Main Languages: </h4><span>C++ and C#</span><br />
-                      <p>These are applications that I have made for one reason or another.<p>
+                      <p>These are standalone applications written primarily in C++ and C#.<p>
                     </div>
                   </div>
                   
@@ -64,11 +64,12 @@
                     <img class="cardimage2" src="/assets/img/icons/javascript.png" />
                     <div class="cardcontent">
                       <h2>Web Projects</h2>
-                      <button class="cardbutton" type="button" onclick="onWebClick()">View Projects</button>
+                      <span><button class="cardbutton" type="button" onclick="onWebClick()">View Projects</button></span>
                       <div></div>
                       <h4>Programming Since: </h4><span>2013</span><br />
-                      <h4>Main Languages: </h4><span>HTML5, CSS3, and Javascript</span><br />
-                      <p>I have been making html pages for many years, but until 2013 I only knew the basics. Though I have made a number of functional web pages, this site is my most ambitious project.<p>
+                      <h4>Proficiency: </h4><span>Intermediate</span><br />
+                      <h4>Main Languages: </h4><span>HTML5, CSS3, and JavaScript</span><br />
+                      <p>I have been making HTML pages for many years, but until 2013 I only knew the basics. Though I have made a number of functional web pages, this site is my most ambitious project.<p>
                     </div>
                   </div>
                 </div>
@@ -78,8 +79,8 @@
                 <div id="unityVerticleContainer" hidden>
                   <a name="unity"></a>
                   <div class="verticlecard">
-                    <h2>Top Down Shooter (TEMP)</h2>
-                    <button class="cardbutton" type="button">Project Page</button>
+                    <h2>Top Down Shooter (TBD)</h2>
+                    <span hidden><button class="cardbutton" type="button">Project Page</button></span>
                     <img class="verticlecardimage" src="/assets/img/icons/unity3dlogo.png"/>
                     <div class="verticlecardcontent">
                       <div></div>
@@ -96,7 +97,7 @@
                   <a name="custom"></a>
                   <div class="verticlecard">
                     <h2>Character Calculator</h2>
-                    <button class="cardbutton" type="button">Project Page</button>
+                    <span hidden><button class="cardbutton" type="button">Project Page</button></span>
                     <img class="verticlecardimage" src="/assets/img/icons/csharp.png"/>
                     <div class="verticlecardcontent">
                       <div></div>
@@ -111,28 +112,37 @@
                 <div id="webVerticleContainer" hidden>
                   <a name="web"></a>
                   <div class="verticlecard">
+                    <h2>Live HTML Editor</h2>
+                    <span><a href="web-projects/live-html/live-html.html"><button class="cardbutton" type="button">Project Page</button></a></span>
+                    <img class="verticlecardimage" src="/assets/img/icons/html5-css3.png"/>
+                    <div class="verticlecardcontent">
+                      <div></div>
+                      <h4>Status: </h4><span>Complete</span><br />
+                      <h4>Development Period: </h4><span>July 2016</span><br />
+                      <p>This project is a page capable of live editing HTML, CSS, and JavaScript. I made this is project out of curiousity to see if it would work. <p>
+                    </div>
+                  </div>
+                  
+                  <div class="verticlecard">
                     <h2>To Do List Web App</h2>
-                    <a href="web-projects/todo/to-do.html"><button class="cardbutton" type="button">Project Page</button></a>
+                    <span><a href="web-projects/todo/to-do.html"><button class="cardbutton" type="button">Project Page</button></a></span>
                     <img class="verticlecardimage" src="/assets/img/icons/html5-css3.png"/>
                     <div class="verticlecardcontent">
                       <div></div>
                       <h4>Status: </h4><span>No longer in development</span><br />
                       <h4>Development Period: </h4><span>June 2016</span><br />
-                      <p>This is a to do list that was built in HTML5 and Javascript. It is considered complete. However, it is simple and was made primarily to learn the interactions between HTML and Javascript.<p>
+                      <p>This is a to do list that was built in HTML5 and JavaScript. It is considered complete. However, it is simple and was made primarily to learn the interactions between HTML and JavaScript.<p>
                       <p>This project was part of the Keys to Success 2016 Summer Technology Track.</p>
                     </div>
                   </div>
+                  
                 </div>
                 
                 </div>
-                
-                
-                
-                
                 
             </form>
         <footer>© 2016 Mark Snyder. All Rights Reserved.</footer>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/portfolio.js"></script>
+    <script type="text/javascript" src="../js/portfolio.js"></script>
 </html>
