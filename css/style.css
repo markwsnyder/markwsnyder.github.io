@@ -10,6 +10,8 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     color: gainsboro;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(220,220,220, .2);
     /*background: linear-gradient(#444, rgb(74,74,74));*/
 }
 ::-webkit-scrollbar {
