@@ -16,6 +16,7 @@
         				<li><a href="/portfolio/portfolio.html#web">Web Projects</a>
         					<ul>
         						<li><a href="/portfolio/web-projects/todo/to-do.html">To Do List</a></li>
+        						<li><a href="/portfolio/web-projects/live-html/live-html.html">Live HTML</a></li>
         					</ul>
         				</li>
         			</ul>
@@ -26,9 +27,17 @@
         </nav>
         <header><h1><a href="/index.html">markwsnyder</a></h1></header>
             <form>
-                
+                <div class="content">
+                    <p>Type in the boxes to have a live preview of html, css, and javascript. Please note that this does NOT save.</p>
+                </div>
+                <h3>HTML</h3><textarea style="width:100%;" rows="10" name="htmlbox" placeholder=" Type code here" id="txtArea" oninput="updateHTML()" autofocus></textarea>
+                <h3>CSS</h3><textarea style="width:100%;" rows="10" name="cssbox" placeholder=" Type code here" id="txtArea2" oninput="updateCSS()"></textarea>
+                <h3>JS</h3><textarea style="width:100%;" rows="10" name="jsbox" placeholder=" Type code here" id="txtArea3" oninput="updateJS()"></textarea>
+                <style id="cssdiv"></style>
+                <script id="jsdiv"></script>
+                <div id="htmldiv" class="content"></div>
             </form>
         <footer>© 2016 Mark Snyder. All Rights Reserved.</footer>
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="code.js"></script>
 </html>

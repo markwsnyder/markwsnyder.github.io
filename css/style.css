@@ -28,7 +28,7 @@ body {
 form {
     text-align: left;
     text-indent: 1em;
-    background-color: dimgrey;
+    background-color: --var(mydarkgrey);
     background-image: url("../assets/img/GridTest.png");
     border-radius: var(--radius);
     padding: 5px 5px 5px 5px;
