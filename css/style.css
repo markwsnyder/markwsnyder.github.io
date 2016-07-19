@@ -136,7 +136,6 @@ button:hover {
 #inFormDiv {
     padding: 5px 10px 5px 10px;
 }
-
 nav ul ul {
 	display: none;
 }
@@ -210,6 +209,7 @@ nav ul ul ul {
    right:5%;
    z-index: 99;
 }
+
 .icon {
     width: 30px;
     border-radius: 5px;
