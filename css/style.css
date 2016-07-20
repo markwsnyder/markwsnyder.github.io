@@ -50,6 +50,7 @@ h2 {
     font-weight: normal;
     font-size: larger;
 	border-bottom: thin solid var(--mygreen);
+    text-indent: 1em;
 }
 h3 {
     color: var(--mygreen);
