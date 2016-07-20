@@ -29,7 +29,6 @@ body {
 }
 form {
     text-align: left;
-    text-indent: 1em;
     background-color: --var(mydarkgrey);
     background-image: url("../assets/img/GridTest.png");
     border-radius: var(--radius);
@@ -73,6 +72,7 @@ footer {
 }
 p {
     margin: 5px;
+    text-indent: 1em;
 }
 a {
     color: inherit;
