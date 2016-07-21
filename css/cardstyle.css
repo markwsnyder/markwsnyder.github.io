@@ -147,7 +147,8 @@ hr {
 
 .verticlecard h2 {
     display: inline-block;
-    width: 65%;
+    margin-left: 20px;
+    width: 61.25%;
     border-bottom: non;
 }
 
