@@ -103,7 +103,7 @@ function onWebClick() {
 
 // WHEN THE PAGE LOADS
 
-window.onload = function pageload() {
+window.onload = function() {
     checkHash();
     updatePage();
 }
