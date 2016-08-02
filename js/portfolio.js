@@ -1,9 +1,3 @@
-StringBuilder sb = new StringBuilder();
-  sb.Append("Sys.Application.add_load(");
-  sb.Append("function() { alert('page load'); });");
-
-ClientScript.RegisterStartupScript(this.GetType(), "Page_Load", sb.ToString(), true);
-
 var pageStates = {
     DEFAULT: 0,
     UNITY: 1,
@@ -109,7 +103,7 @@ function onWebClick() {
 
 // WHEN THE PAGE LOADS
 
-window.onload = function() {
+$(document).ready(function() {
     checkHash();
     updatePage();
-}
+});

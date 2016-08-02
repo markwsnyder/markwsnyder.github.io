@@ -1,10 +1,4 @@
-StringBuilder sb = new StringBuilder();
-  sb.Append("Sys.Application.add_load(");
-  sb.Append("function() { alert('page load'); });");
-
-ClientScript.RegisterStartupScript(this.GetType(), "Page_Load", sb.ToString(), true);
-
-window.onload = function() {
+$(document).ready(function() {
     alert("Nav Loaded");
     setTimeout(function(){
     if(window.location.href.indexOf('index') > -1) {
@@ -23,4 +17,4 @@ window.onload = function() {
        document.getElementById('home').className = 'active';
     }
     }, 500);
-};
+});
