@@ -6,14 +6,14 @@
     <link rel = "stylesheet" href = "./css/style.css" />
 </head>
     <body ng-app>
-        <div ng-include="'html/nav.html'"></div>
+        <div ng-include="'./html/nav.html'"></div>
         <header><h1><a href="/index.html">markwsnyder</a></h1></header>
             <form>
                 <div class="container">
-                    <div id="sidebar"><img src="/assets/img/DrenProfileCentered.png" id="avatar" alt="Profile Image" title="Scripting Magic"><h4></h4></div>
+                    <div id="sidebar"><img src="/assets/img/DrenProfileCentered.png" id="avatar" alt="Profile Image" title="Scripting Magic"><h4>{{5+5}}</h4></div>
                     <div class="header"><h2>Welcome</h2></div>
                     <div class="content">
-                        <p>Welcome to my {{5 + 5}} website! This is my digital portfolio, résumé, and a place to host files and projects.</p>
+                        <p>Welcome to my website! This is my digital portfolio, résumé, and a place to host files and projects.</p>
                         <p></p>
                     </div>
                     <div class="header"><h2>About Me</h2></div>
@@ -83,5 +83,6 @@
     </body>
     <script src="./resources/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/nav.js"></script>
 </html>
 
