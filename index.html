@@ -4,34 +4,11 @@
     <meta charset="utf-8">
     <title>markwsnyder home</title>
     <link rel = "stylesheet" href = "./css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
-    <body>
+    <body ng-app="" ng-controller="">
         <nav id='mainNav' class="nav">
-            <ul>
-            	<li><a href='/index.html' id='home' class='active'>Home</a></li>
-            	<li><a href='/portfolio/portfolio.html' id='portfolio'>Portfolio</a>
-            		<ul>
-            			<li><a href='/portfolio/portfolio.html#unity'>Unity 3D</a>
-            				<ul>
-            					<li><a href='/games/top-down-shooter/top-down-shooter.html'>Top Down Shooter</a></li>
-            				</ul>
-            			</li>
-            			<li><a href='/portfolio/portfolio.html#custom'>Custom Apps</a></li>
-            			<li><a href='/portfolio/portfolio.html#web'>Web Projects</a>
-            				<ul>
-            					<li><a href='/portfolio/web-projects/todo/to-do.html'>To Do List</a></li>
-            					<li><a href='/portfolio/web-projects/live-html/live-html.html'>Live HTML</a></li>
-            				</ul>
-            			</li>
-            		</ul>
-            	</li>
-            	<li><a href='#' id='games'>Games</a>
-            	    <ul>
-            			<li><a href='/games/top-down-shooter/top-down-shooter.html'>Top Down Shooter</a></li>
-            		</ul>
-            	</li>
-            	<li><a href='#' id='contact'>Contact</a></li>
-            </ul>
+            <div ng-include="'html/nav.html'"></div>
         </nav>
         <header><h1><a href="/index.html">markwsnyder</a></h1></header>
             <form>
@@ -39,7 +16,7 @@
                     <div id="sidebar"><img src="/assets/img/DrenProfileCentered.png" id="avatar" alt="Profile Image" title="Scripting Magic"><h4></h4></div>
                     <div class="header"><h2>Welcome</h2></div>
                     <div class="content">
-                        <p>Welcome to my website! This is my digital portfolio, résumé, and a place to host files and projects.</p>
+                        <p>Welcome to my {{5 + 5}} website! This is my digital portfolio, résumé, and a place to host files and projects.</p>
                         <p></p>
                     </div>
                     <div class="header"><h2>About Me</h2></div>
@@ -109,3 +86,4 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </html>
+
