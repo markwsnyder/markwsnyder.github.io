@@ -31,7 +31,7 @@ you may use an image as the background if you like, but it's not recommended */
 .cardcontent {
     float: left;
     width: 318px;
-    height: 188px;
+    height: 200px;
     margin: 5px;
     margin-left: 110px;
     padding: 5px;
@@ -65,7 +65,7 @@ you may use an image as the background if you like, but it's not recommended */
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 110px;
+    top: 120px;
     left: 0;
     margin: 10px;
     margin-left: 5px;
