@@ -1,4 +1,4 @@
-window.onload = function pageload() {
+window.onload = function navpageload() {
     alert("Nav Loaded");
     setTimeout(function(){
     if(window.location.href.indexOf('index') > -1) {
