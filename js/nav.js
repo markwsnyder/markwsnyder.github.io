@@ -15,5 +15,5 @@ $(document).ready(function() {
     else {
        document.getElementById('home').className = 'active';
     }
-    }, 100);
+    }, 250);
 });
