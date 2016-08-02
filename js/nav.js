@@ -1,10 +1,8 @@
 window.onload = function pageload() {
-
-    //document.getElementById('mainNav').innerHTML = '<object type="text/html" data="html/nav.html" class="nav"></object>';
+    alert("Nav Loaded");
+    setTimeout(function(){
     if(window.location.href.indexOf('index') > -1) {
-       alert("WHOA");
        $('#home').addClass('active');
-       alert("WHOA2");
     }
     else if(window.location.href.indexOf('portfolio') > -1) {
        document.getElementById('portfolio').className = 'active';
@@ -18,4 +16,5 @@ window.onload = function pageload() {
     else {
        document.getElementById('home').className = 'active';
     }
+    }, 500);
 };
