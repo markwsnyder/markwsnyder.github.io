@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    alert("Nav Loaded");
     setTimeout(function(){
     if(window.location.href.indexOf('index') > -1) {
        $('#home').addClass('active');
