@@ -153,10 +153,8 @@ button:hover {
     display: flex;
 }
 .splitLeft {
-    margin-right: 50%;
-    position: inline;
+    width: 50%;
 }
 .splitRight {
-    margin-left: 50%;
-    position: inline;
+    width: 50%;
 }
