@@ -149,6 +149,9 @@ button:hover {
 .icon:hover {
     box-shadow: 0px 0px 5px rgba(40,180,0,1); 
 }
+.splitContainer {
+    display: flex;
+}
 .splitLeft {
     margin-right: 50%;
     position: inline;
