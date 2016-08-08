@@ -5,7 +5,10 @@
     <title></title>
 <link rel = "stylesheet" type="text/css" href = "/css/style.css" />
 </head>
-    <body>
+    <body ng-app>
+        
+        <div ng-include="'/html/nav.html'"></div>
+        
         <header><h1><a href="/index.html">markwsnyder</a></h1></header>
             <form>
                 <h3>HTML</h3><textarea style="width:100%;" rows="10" name="htmlbox" placeholder=" Type HTML here" id="txtArea" oninput="updateHTML()" autofocus></textarea>
@@ -17,5 +20,11 @@
             </form>
         <footer>© 2016 Mark Snyder. All Rights Reserved.</footer>
     </body>
+    
+    <script src="/resources/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/nav.js"></script>
+    
     <script type="text/javascript" src="code.js"></script>
+    
 </html>
