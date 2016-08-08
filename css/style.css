@@ -154,7 +154,9 @@ button:hover {
 }
 .splitLeft {
     width: 50%;
+    height: 100%;
 }
 .splitRight {
     width: 50%;
+    height: 100%;
 }
