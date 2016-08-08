@@ -113,7 +113,8 @@ button:hover {
     padding: 5px 5px 5px 5px;
     font-size: small;
 }
-.header { border:0px solid #000; width:75%; 
+.header {
+    border:0px solid #000; width:75%; 
     margin: 0 0 0px 2em;
     text-align: left;
     text-indent: 1em;
