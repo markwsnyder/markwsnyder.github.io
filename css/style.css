@@ -151,9 +151,9 @@ button:hover {
 }
 .splitLeft {
     margin-right: 50%;
-    position: inline-block;
+    position: inline;
 }
 .splitRight {
     margin-left: 50%;
-    position: inline-block;
+    position: inline;
 }
