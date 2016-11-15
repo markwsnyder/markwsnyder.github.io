@@ -1,16 +1,12 @@
 body {
     background: dimgrey;
-    background-image: url("../assets/img/GridTest.png");
+    background-image: url("../assets/img/logos.png"), url("../assets/img/GridTest.png");
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: gainsboro;
     margin: 0px;
+    overflow-y: scroll;
+
     transition: all .3s;
-}
-#pseudoBack {
-    background-image: url("../assets/img/logos.png");
-}
-.temp {
-    height: 1080px;
 }
 a {
     color: inherit;
@@ -21,16 +17,16 @@ a {
 p {
     margin: 5px;
 }
-#msnyder:hover {
-    color: rgb(255,255,255);
-    
-    transition: all .3s;
+hr {
+    border-width: 1px;
+    border-top: none;
+    width: 50%;
 }
 h1 {
     display: block;
 }
 h3 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
     margin: 0px;
     margin-bottom: 15px;
@@ -76,15 +72,63 @@ footer {
 .footerFour {
     background: linear-gradient(to right, rgb(40,180,0), rgba(0,0,0,0));
 }
+#msnyder:hover {
+    color: rgb(255,255,255);
+    
+    transition: all .3s;
+}
+#download {
+    display: inline-block;
+    padding: 5px;
+    background: rgb(40,180,0);
+    border: solid rgba(0,0,0,0) 3px;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-left: 2em;
+    
+    transition: all .3s;
+}
+#download:hover {
+    color: rgb(40,180,0);
+    border-radius: 15px;
+    border: solid rgba(40,180,0,1) 3px;
+    background: none;
+}
+.link {
+    display: inline-block;
+    padding: 5px;
+    margin: 0px;
+    background: DarkOrange;
+    font-weight: bold;
+    border: solid rgba(0,0,0,0) 3px;
+    border-radius: 0px;
+    cursor: pointer;
+
+    transition: all .3s;
+}
+.link:hover {
+    color: DarkOrange;
+    border-radius: 0px 15px 15px 0px;
+    border: solid DarkOrange 3px;
+    background: none;
+    
+    transition: all .3s;
+}
+#tooltip {
+    position: absolute;
+    top: 14px;
+    z-index: 99;
+}
 #nav {
     background: rgba(25,25,25,.8);
-    width: 100;
     margin: 10px 0px 10px 0px;
     padding: 5px;
     font-size: 24px;
     color: gainsboro;
     display: flex;
     justify-content: center;
+    
+    position: relative;
 }
 .navItem {
     margin: 5px 20px;
@@ -155,8 +199,9 @@ footer {
 }
 #sidebar{
     border-radius: 25px 0px 0px 25px;
-
-    flex: 0 0 12em;
+    position: relative;
+    
+    flex: 0 0 16em;
 }
 .content {
     background: rgba(30,30,30,.8);

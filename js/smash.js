@@ -11,6 +11,22 @@ $( document ).ready(function() {
     itemOne();
 });
 
+
+$('#hoverMe').hover(function () {
+    $('#tooltip').fadeIn(0);
+}, function () {
+    $('#tooltip').fadeOut(0);
+});
+$('#tooltip').hover(function () {
+    $('#tooltip').fadeIn(0);
+}, function () {
+    $('#tooltip').fadeOut(150);
+});
+
+function downloadForm() {
+  	window.open('../files/SmashBrosPermissionSlip.pdf');
+}
+
 function deselectAll()
 {
     $("#navOne").removeClass("navOneSelected");
