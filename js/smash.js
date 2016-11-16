@@ -1,14 +1,37 @@
-var currentPage = {
+/*var currentPage = {
     RED: 0,
     BLUE: 1,
     ORANGE: 2,
     GREEN: 3
+}*/
+
+//var currentPage;
+
+var bracketState = {
+    val: 0
 }
-var currentPage;
+
+var calendarState = {
+    val: 0
+}
+
+var contactState = {
+    val: 0
+}
+
+var tutorialState = {
+    val: 0
+}
+
+//var bracketState;
 
 $( document ).ready(function() {
-    currentPage = 0;
+    //currentPage = 0;
     itemOne();
+    $("#calendar").hide();
+    $("#bracket").hide();
+    $("#contact").hide();
+    $("#tutorial").hide();
 });
 
 
@@ -25,6 +48,39 @@ $('#tooltip').hover(function () {
 
 function downloadForm() {
   	window.open('../files/SmashBrosPermissionSlip.pdf');
+}
+
+function toggleBracket() {
+    if (bracketState == 0) {
+        bracketState = 1;
+        $("#bracket").slideDown(300);
+    }
+    else if (bracketState == 1) {
+        bracketState = 0;
+        $("#bracket").slideUp(300);
+    }
+}
+
+function toggleCalendar() {
+    if (bracketState == 0) {
+        $("#calendar").slideDown(300);
+        bracketState = 1;
+    }
+    else if (bracketState == 1) {
+        $("#calendar").slideUp(300);
+        bracketState = 0;
+    }
+}
+
+function toggleItem(id, itemState) {
+    if (itemState.val == 0) {
+        $(id).slideDown(300);
+        itemState.val = 1;
+    }
+    else if (itemState.val == 1) {
+        $(id).slideUp(300);
+        itemState.val = 0;
+    }
 }
 
 function deselectAll()
@@ -53,7 +109,7 @@ function itemOne() {
     
     $("#pageOne").fadeIn(300);
     
-    currentPage = 0;
+    //currentPage = 0;
     
     $("#navOne").addClass("navOneSelected");
     $("footer").addClass("footerOne");
@@ -67,7 +123,7 @@ function itemTwo() {
     
     $("#pageTwo").fadeIn(300);
     
-    currentPage = 1;
+    //currentPage = 1;
     
     $("#navTwo").addClass("navTwoSelected");
     $("footer").addClass("footerTwo");
@@ -81,7 +137,7 @@ function itemThree() {
     
     $("#pageThree").fadeIn(300);
     
-    currentPage = 2;
+    //currentPage = 2;
     
     $("#navThree").addClass("navThreeSelected");
     $("footer").addClass("footerThree");
@@ -95,7 +151,7 @@ function itemFour() {
     
     $("#pageFour").fadeIn(300);
     
-    currentPage = 3;
+    //currentPage = 3;
     
     $("#navFour").addClass("navFourSelected");
     $("footer").addClass("footerFour");

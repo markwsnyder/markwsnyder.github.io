@@ -77,48 +77,7 @@ footer {
     
     transition: all .3s;
 }
-#download {
-    display: inline-block;
-    padding: 5px;
-    background: rgb(40,180,0);
-    border: solid rgba(0,0,0,0) 3px;
-    border-radius: 0px;
-    cursor: pointer;
-    margin-left: 2em;
-    
-    transition: all .3s;
-}
-#download:hover {
-    color: rgb(40,180,0);
-    border-radius: 15px;
-    border: solid rgba(40,180,0,1) 3px;
-    background: none;
-}
-.link {
-    display: inline-block;
-    padding: 5px;
-    margin: 0px;
-    background: DarkOrange;
-    font-weight: bold;
-    border: solid rgba(0,0,0,0) 3px;
-    border-radius: 0px;
-    cursor: pointer;
 
-    transition: all .3s;
-}
-.link:hover {
-    color: DarkOrange;
-    border-radius: 0px 15px 15px 0px;
-    border: solid DarkOrange 3px;
-    background: none;
-    
-    transition: all .3s;
-}
-#tooltip {
-    position: absolute;
-    top: 14px;
-    z-index: 99;
-}
 #nav {
     background: rgba(25,25,25,.8);
     margin: 10px 0px 10px 0px;
@@ -220,4 +179,57 @@ footer {
 } 
 .contentFour {
     border: solid rgb(40,180,0);
+}
+.link {
+    display: inline-block;
+    padding: 5px;
+    margin: 0px;
+    font-weight: bold;
+    border: solid rgba(0,0,0,0) 3px;
+    border-radius: 0px;
+    cursor: pointer;
+
+    transition: all .3s;
+}
+.link:hover {
+    background: none;
+    
+    transition: all .3s;
+}
+.link1:hover {
+    border-radius: 15px;
+}
+.link2:hover {
+    border-radius: 0px 15px 15px 0px;
+}
+.linkRed {
+    background: rgb(220,20,20);
+}
+.linkRed:hover {
+    color: rgb(220,20,20);
+    border: solid rgb(220,20,20) 3px;
+}
+.linkBlue {
+    background: rgb(30,185,250);
+}
+.linkBlue:hover {
+    color: rgb(30,185,250);
+    border: solid rgb(30,185,250) 3px;
+}
+.linkOrange {
+    background: DarkOrange;
+}
+.linkOrange:hover {
+    color: DarkOrange;
+    border: solid DarkOrange 3px;
+}
+.linkGreen {
+    background: rgb(40,180,0);
+}
+.linkGreen:hover {
+    color: rgb(40,180,0);
+    border: solid rgb(40,180,0) 3px;
+}
+#calendar {
+    display: block;
 }
