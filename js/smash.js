@@ -11,6 +11,10 @@ var bracketState = {
     val: 0
 }
 
+var rulesState = {
+    val: 0
+}
+
 var calendarState = {
     val: 0
 }
@@ -27,13 +31,13 @@ var tutorialState = {
 
 $( document ).ready(function() {
     //currentPage = 0;
-    itemOne();
+    //itemOne();
     $("#calendar").hide();
-    $("#bracket").hide();
+    //$("#bracket").hide();
+    //$("#rules").hide();
     $("#contact").hide();
-    $("#tutorial").hide();
+    //$("#tutorial").hide();
 });
-
 
 $('#hoverMe').hover(function () {
     $('#tooltip').fadeIn(0);
@@ -50,6 +54,7 @@ function downloadForm() {
   	window.open('../files/SmashBrosPermissionSlip.pdf');
 }
 
+/*
 function toggleBracket() {
     if (bracketState == 0) {
         bracketState = 1;
@@ -71,10 +76,20 @@ function toggleCalendar() {
         bracketState = 0;
     }
 }
+*/
 
 function toggleItem(id, itemState) {
     if (itemState.val == 0) {
         $(id).slideDown(300);
+        /*
+        $(id).show(function(){
+        // Find the iframes within our newly-visible element
+        $(this).find("iframe").prop("src", function(){
+            // Set their src attribute to the value of data-src
+            return $(this).data("src");
+        });
+    });*/
+        
         itemState.val = 1;
     }
     else if (itemState.val == 1) {

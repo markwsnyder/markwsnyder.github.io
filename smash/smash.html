@@ -23,15 +23,16 @@
             
             <div id="sidebar" class="content contentOne">
                 
-                <h3>Upcoming Events</h3>                        
-                <h4>High School Tournament</h4><p>The annual PGHS tournament is coming up. Will run from 11/29/2016 to 12/8/2016.</p>
+                <h3>Upcoming Events</h3>
+                
+                <h4>Christmas Tournament - Dec 16</h4><p>The first club tournament. After school on Friday.</p>
                 <hr/>
-                <h4>Lunch Meet - Dec 6</h4><p>CANCELLED. The High School Tournament will be taking place.</p>
+                <h4>Lunch Meeting - Dec 20</h4><p>Normal meeting during lunch.</p>
                 
                 <h3>Contact Info</h3>
                 <h4>Club Advisor - Audra Yocom</h4><p>ayocom@alpinedistrict.org</p>
                 
-                <p style="font-size: 12px; color: rgba(255,255,255,.5); margin-top: 30px;">Last Updated: 12/6/2016</p>
+                <p style="font-size: 12px; color: rgba(255,255,255,.5); margin-top: 30px;">Last Updated: 12/12/2016</p>
                 
             </div>
             
@@ -69,15 +70,28 @@
 
                 </div>
 
-                <div id="pageTwo">
+                <div id="pageTwo" class="hiddenElement">
             
                     <div class="content contentTwo">
                         
-                        <h3 style="display: inline-block">Sample Tournament</h3>
-                        <a class="link linkBlue" style="margin-left: 1em" href="http://challonge.com/9831by8n" target="_blank">Tournament Page</a>
-                        <a class="link linkBlue" style="" href="#" target="_blank">Rules</a>
-                        <a class="link link2 linkBlue" style="" onClick="toggleItem('#bracket', bracketState)">Hide/Show</a>
-                        <iframe id="bracket" style="margin-top: 10px" src="https://challonge.com/9831by8n/module?theme=2&show_final_results=1" width="100%" height="1125" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                        <h3 style="display: inline-block">Christmas Tournament</h3>
+                        <a class="link linkBlue" style="margin-left: 1em" href="http://pghs-smash.challonge.com/PGHS_CT_2016" target="_blank">Tournament Page</a>
+                        <a class="link linkBlue" style="" href="https://docs.google.com/forms/d/e/1FAIpQLSeY-JSWj0nyKZKPDgYUqQ_ncPBs8NMdCySeCidOrXqX4ECBXw/viewform" target="_blank">Sign Up</a>
+                        <a class="link linkBlue" style="" onClick="toggleItem('#rules', rulesState)">Rules</a>
+                        <a class="link link2 linkBlue" style="" onClick="toggleItem('#bracket', bracketState)">Bracket</a>
+                        <p>The first club tournament. It will be held on Dec 16 after school in room 220. Sign up above. The sign up deadline is Dec 15 at midnight and is first come first serve (32 max).</p>
+                        <div id="rules" class="hiddenElement">
+                            <h3>Rules:</h3>
+                            <ul>
+                                <li>2 Stock, 6 Minute Time Limit, Items Off, Equipment Off, Pausing Off, Best 2/3 Games (Semi-Finals & Finals)</li>
+                                <li>Random Omega stages only (this is subject to change in this and future tournaments).</li>
+                                <li>Amiibo’s are banned.</li>
+                                <li>Mii Fighters are banned.</li>
+                                <li>Custom controls ARE allowed.</li>
+                                <li>DLC Characters ARE allowed.</li>
+                            </ul>
+                        </div>
+                        <iframe id="bracket" class="hiddenElement" style="margin-top: 10px" src="https://pghs-smash.challonge.com/PGHS_CT_2016/module?theme=2&show_final_results=1" width="100%" height="1125" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 
                     </div>
                     
@@ -91,21 +105,13 @@
                     <div class="content contentTwo">
             
                         <h3>Club Tournaments</h3>
-                        <p>Coming Soon™</p>
                         <a class="link link2 linkBlue" style="" href="http://pghs-smash.challonge.com/" target="_blank">Club Challonge Page</a>
-                        
-                    </div>
-                    
-                    <div class="content contentTwo">
-            
-                        <h3>High School Tournament</h3>
-                        <p>The PGHS tournament will run from 11/29/2016 to 12/8/2016 during lunch. It is in Mr. Barnards room.</p>
                         
                     </div>
                         
                 </div>
                 
-                <div id="pageThree">
+                <div id="pageThree" class="hiddenElement">
             
                     <div class="content contentThree">
                         
@@ -124,7 +130,7 @@
                         
                         <h3 style="display: inline-block">Recommended Tutorials</h3><a class="link link2 linkOrange" style="margin-left: 1em" onClick="toggleItem('#tutorial', tutorialState)">Hide/Show</a>
                         
-                        <div id="tutorial">
+                        <div id="tutorial" class="hiddenElement">
                         
                             <p>These are tutorials that are some of the most important from the above resources. Some are fundementals, some are more complex techniques. They will all help you improve.</p>
                             <a class="link link2 linkOrange" href="https://www.youtube.com/watch?v=UIdyVK1aDtg" target="_blank">Directional Influence (DI)</a><p>A tutorial video on Directional Influence (DI) by My Smash Corner. There are three types of DI: Directional Influence, Tap/Smash DI, and Momentum Canceling. Directional Influence is when you aim for the direction you want to go when being launched. Tap DI or Smash DI is controlling the direction a character moves in multiple hit moves or combos. This can also be used to escape grabs at high percentages.</p>
@@ -144,7 +150,7 @@
                 </div>
                 
                 
-                <div id="pageFour">
+                <div id="pageFour" class="hiddenElement">
             
                     <div class="content contentFour">
                         

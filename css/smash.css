@@ -47,6 +47,9 @@ header {
     padding: 10px;
     text-align: center;
 }
+.hiddenElement {
+    display: none;
+}
 .toplogo {
     height: 150px;
     margin: 0px;
