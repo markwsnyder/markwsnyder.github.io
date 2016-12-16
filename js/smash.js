@@ -37,6 +37,7 @@ $( document ).ready(function() {
     //$("#rules").hide();
     $("#contact").hide();
     //$("#tutorial").hide();
+    alert("The Christmas Tournament has been moved from Dec 16 to Dec 22. Sorry for any inconvenience this has caused.");
 });
 
 $('#hoverMe').hover(function () {
