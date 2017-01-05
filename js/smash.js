@@ -37,7 +37,7 @@ $( document ).ready(function() {
     //$("#rules").hide();
     $("#contact").hide();
     //$("#tutorial").hide();
-    alert("The Christmas Tournament has been moved from Dec 16 to Dec 22. Sorry for any inconvenience this has caused.");
+    alert("Club Photo - Jan 18. Club photo for the yearbook. We are scheduled for 10:45 in the student center.");
 });
 
 $('#hoverMe').hover(function () {
