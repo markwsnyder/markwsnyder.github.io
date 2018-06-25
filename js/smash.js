@@ -37,7 +37,7 @@ $( document ).ready(function() {
     //$("#rules").hide();
     $("#contact").hide();
     //$("#tutorial").hide();
-    alert("Club Photo - Jan 18. Club photo for the yearbook. We are scheduled for 10:45 in the student center.");
+    //alert("Club Photo - Jan 18. Club photo for the yearbook. We are scheduled for 10:45 in the student center.");
 });
 
 $('#hoverMe').hover(function () {
